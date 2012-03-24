@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+	<title>MTA Colors Demo - New York City Subway Colors</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+	<meta name="description" content="Color specifications (hex, Pantone, and CMYK values) for New York's MTA lines, including the NYC subway.">
+	<meta name="keywords" content="subway colors, nyc subway colors, mta colors, subway line colors, subway hex codes, subway pantone, subway cmyk">
+	<meta name="viewport" content=
+	"width=device-width,initial-scale=1,user-scalable=yes">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="css/mta-colors.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="images/mta-a-32.ico">
+	<link rel="apple-touch-icon" href="images/mta-a-57.png">
+	<link rel="image_src" href="images/mta-a-57.png">
+	<script src="js/vendor/underscore.min.js" type="text/javascript"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript">
+</script>
+<!--[if lt IE 9]><script src="libs/respond.min.js"></script><![endif]-->
+</head>
+
+<body>
+	<div id="top">
+		<h1>NYC Subway Colors Demo</h1>
+		<center class="hover_note"><i>hover/tap/click to reveal color codes</i></center>
+		<select>
+			<option value="hex">
+				Hex
+			</option>
+
+			<option value="pantone">
+				Pantone
+			</option>
+
+			<option value="cmyk">
+				CMYK
+			</option>
+		</select>
+	</div>
+
+	<div id="main"></div>
+	<div id="notes">
+		<hr>
+		<div id="get-data">
+			<h2>Get the Data</h2>
+
+			<ul>
+				<li>The colors come from the MTA's <a href="http://mta.info/developers/data/colors.csv">official .csv file</a>. In addition to colors for the subway lines, the file also includes color codes for the MTA's Long Island Rail Road and Metro-North Railroad lines.</li>
+				<li>The hex codes for that data, converted into a <a href="css/mta-colors.css">CSS stylesheet</a> (Last updated: March 10, 2012) </li>
+				<li>The same data, as a <a href="data/mta-colors.json">JSON file</a> (Last updated: March 10, 2012) </li>
+			</ul>
+		</div>
+		<hr>
+
+		<div id="contribute">
+			<h2>Contribute</h2>
+			The CSS and JSON files, as well as the source code for this demo site, <a href="http://www.github.com/jsvine/mta-colors">are hosted on GitHub</a>. Contributions welcome, especially translations into SASS, HAML, and Stylus stylesheets.
+		</div>
+		<hr>
+
+		<div id="use-this">
+			<h2>Use the Subway Colors and Bullets</h2>
+			<p><b><span style="background: #FCCC0A; padding: 1px 3px;">NOTE:</span> According to the <a href="http://www.mta.info">MTA website</a>, "use of MTA logos, maps, and symbols requires a license." See their <a href="http://mta.info/licensing">licensing page</a> for more details. The following instructions assume that you have obtained permission to use the symbols, or are staying within the bounds of <i><a href="http://en.wikipedia.org/wiki/Fair_use">fair use</a></i>.</b></p>
+			<p>
+				Add a copy of <a href="css/mta-colors.css"><code>mta-colors.css</code></a> to your HTML document, anywhere above where you'll be using the bullets. To make a bullet, add the following two classes to a <code>&lt;span&gt;</code> or <code>&lt;div&gt;</code> element: (1) <code>mta-bullet</code> to define the shape, and (2) <code>mta-{{line}}</code> to define the color.
+			</p>
+			<p>
+				<i>To support Internet Explorer 6-9, you'll need to place <a href="http://css3pie.com/">CSS3 PIE</a> in the same folder as <code>mta-colors.css</code>.</i>
+			</p>
+			</div>
+
+			<div class="code">
+				I ride the &lt;span class='mta-bullet mta-d'&gt;D&lt;/span&gt; to work.
+			</div>
+
+			<div class="sample">
+				I ride the <span class='mta-bullet mta-d'>D</span> to work.
+			</div>
+
+			<div class="code">
+				My favorite line is the &lt;span class='mta-bullet mta-n'&gt;N&lt;/span&gt; &lt;span class='mta-bullet mta-q'&gt;Q&lt;/span&gt; &lt;span class='mta-bullet mta-r'&gt;R&lt;/span&gt;.
+			</div>
+			<div class="sample">
+				My favorite line is the <span class='mta-bullet mta-n'>N</span> <span class='mta-bullet mta-q'>Q</span> <span class='mta-bullet mta-r'>R</span>.
+			</div>
+
+			<div>
+				The CSS file also includes grouped line-colors. So you could write the example above as:
+			</div>
+			<div class="code">
+				My favorite line is the &lt;span class='mta-bullet mta-nqr'&gt;N&lt;/span&gt; &lt;span class='mta-bullet mta-nqr'&gt;Q&lt;/span&gt; &lt;span class='mta-bullet mta-nqr'&gt;R&lt;/span&gt;.
+			</div>
+			<div class="sample">
+				My favorite line is the <span class='mta-bullet mta-nqr'>N</span> <span class='mta-bullet mta-nqr'>Q</span> <span class='mta-bullet mta-nqr'>R</span>.
+			</div>
+
+			<div>
+				And because the shape, color, and content of the bullets are handled separately, you can also do this:
+			</div>
+			<div class="code">
+				&lt;span class='mta-bullet mta-1'&gt;H&lt;/span&gt; &lt;span class='mta-bullet mta-e'&gt;E&lt;/span&gt; &lt;span class='mta-bullet mta-6'&gt;L&lt;/span&gt; &lt;span class='mta-bullet mta-l'&gt;L&lt;/span&gt; &lt;span class='mta-bullet mta-7'&gt;O&lt;/span&gt;
+			</div>
+			<div class="sample">
+				<span class='mta-bullet mta-1'>H</span> <span class='mta-bullet mta-e'>E</span> <span class='mta-bullet mta-6'>L</span> <span class='mta-bullet mta-l'>L</span> <span class='mta-bullet mta-7'>O</span>
+			</div>
+		</div>
+		<hr>
+	</div>
+
+	<div id="footer">Created by <a href="http://www.jsvine.com/">Jeremy Singer-Vine</a> (<a href="https://twitter.com/jsvine">@jsvine</a>). Thanks to <a href="http://zachseward.com">Zach Seward</a> (<a href="https://twitter.com/zseward">@zseward</a>) for flagging the original CSV.</div>
+	<script src="js/colors.js" type="text/javascript">
+</script>
+</body>
+</html>

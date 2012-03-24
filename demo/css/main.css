@@ -1,0 +1,168 @@
+body {
+	font-family: Helvetica, sans-serif;
+	width: 90%;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 10px;
+}
+
+a, a:visited {
+	color: darkBlue;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	background: papayaWhip;	
+}
+
+hr {
+	width: 50%;	
+	margin: 20px auto;
+	padding: 0;
+}
+
+#top {
+	position: relative;
+}
+
+h1 {
+	font-size: 48px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+h2 {
+	font-size: 28px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+#top select {
+	position: absolute;
+	right: 1.5em;
+	top: 1em;
+	font-size: 13px;
+	height: 2em;
+	line-height: 2em;
+	margin: 0;
+	border: 1px solid #CCC;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#main {
+	font-size: 59px;
+	overflow: hidden;
+}
+
+.hover_note {
+	padding-bottom: 10px;
+	font-size: 1.5em;
+	color: #333;
+}
+
+.box {
+	float: left;
+	position: relative;
+	padding: 0.1em;
+}
+
+.info {	
+	display: none; 
+}
+
+.box:hover .info { 
+	display: block 
+}
+
+.box:hover .mta-bullet { 
+	opacity: 0.3 
+}
+
+.hex, .pantone, .cmyk {
+	display: none;
+	position: absolute;
+	top: 36%;
+	left: 0;
+	width: 95%;
+	line-height: 1;
+	font-weight: bold;
+	text-align: center;
+	font-size: 0.3em;
+}
+.pantone { font-size: 0.25em; }
+.cmyk {	font-size: 0.2em; }
+
+#main[data-color-system=hex] .hex { display: block }
+#main[data-color-system=pantone] .pantone { display: block }
+#main[data-color-system=cmyk] .cmyk { display: block }
+
+#notes, #footer {
+	font-size: 14px;
+	margin: 10px auto;
+	width: 75%;
+}
+
+#notes li {
+	margin-bottom: 10px;
+	margin-left: -2em;
+}
+
+.code {
+	margin: 20px 0 5px; 
+	border: 1px solid #EEE;
+	background-color: #F4F1E9;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 5px;
+	font-family: monospace;
+}
+
+.sample {
+	background: papayaWhip;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+#tagline {
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+@media screen and (min-width: 900px) {
+	body {
+		width: 880px;	
+	}
+}
+
+@media screen and (max-width: 750px) {
+	#main { font-size: 40px; }
+	h1 { font-size: 24px; }
+	h2 { font-size: 18px; }
+	#notes { width: 90%; }
+	#top select { top: 2px; }
+}
+
+@media screen and (max-width: 550px) {
+	#top h1 {
+		font-size: 20px;
+		text-align: left;
+	}
+	#top select { font-size: 10px; }
+}
+
+@media screen and (max-width: 320px) {
+	#top h1 { text-align: center; }
+	#top select {
+		position: static;
+		display: block;
+		font-size: 10px;
+		margin: 0px auto 10px;
+		width: 100px;
+	}
+}
+

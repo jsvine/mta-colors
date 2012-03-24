@@ -1,0 +1,197 @@
+{
+	"metadata": {
+		"source": "http://mta.info/developers/data/colors.csv",
+		"note": "Use of MTA logos, maps and symbols requires a license. For licensing information, contact Mark Heavey at mheavey@mtahq.org."
+	},
+	"data": [
+		{
+			"m": "NYCT Subway",
+			"line": "A/C/E",
+			"hex": "2850AD",
+			"pantone": "PMS 286",
+			"cmyk": "c100;m56"
+		},
+		{
+			"m": "NYCT Subway",
+			"line": "B/D/F/M",
+			"hex": "FF6319",
+			"pantone": "PMS 165",
+			"cmyk": "m60;y100"
+		},
+		{
+			"m": "NYCT Subway",
+			"line": "G",
+			"hex": "6CBE45",
+			"pantone": "PMS 376",
+			"cmyk": "c56;y100"
+		},
+		{
+			"m": "NYCT Subway",
+			"line": "J/Z",
+			"hex": "996633",
+			"pantone": "PMS 154",
+			"cmyk": "m43;y100;k34"
+		},
+		{
+			"m": "NYCT Subway",
+			"line": "L",
+			"hex": "A7A9AC",
+			"pantone": "50% black",
+			"cmyk": "50k"
+		},
+		{
+			"m": "NYCT Subway",
+			"line": "N/Q/R",
+			"hex": "FCCC0A",
+			"pantone": "PMS 116",
+			"cmyk": "m15;y94"
+		},
+		{
+			"m": "NYCT Subway",
+			"line": "S",
+			"hex": "808183",
+			"pantone": "70% black",
+			"cmyk": "70k"
+		},
+		{
+			"m": "NYCT Subway",
+			"line": "1 2 3",
+			"hex": "EE352E",
+			"pantone": "PMS 185",
+			"cmyk": "m91;y76"
+		},
+		{
+			"m": "NYCT Subway",
+			"line": "4 5 6",
+			"hex": "00933C",
+			"pantone": "PMS 355",
+			"cmyk": "c100;y91;6k"
+		},
+		{
+			"m": "NYCT Subway",
+			"line": "7",
+			"hex": "B933AD",
+			"pantone": "PMS Purple",
+			"cmyk": "c43;m91"
+		},
+		{
+			"m": "LIRR",
+			"line": "Babylon Branch",
+			"hex": "00985F",
+			"pantone": "PMS 340",
+			"cmyk": "c100;m11;y83;k1"
+		},
+		{
+			"m": "LIRR",
+			"line": "City Terminal Zone",
+			"hex": "4D5357",
+			"pantone": "PMS 445",
+			"cmyk": "c69;m56;y53;k31"
+		},
+		{
+			"m": "LIRR",
+			"line": "Far Rockaway Branch",
+			"hex": "6E3219",
+			"pantone": "PMS 168",
+			"cmyk": "c35;m80;y96;k43"
+		},
+		{
+			"m": "LIRR",
+			"line": "Hempstead Branch",
+			"hex": "CE8E00",
+			"pantone": "PMS 131",
+			"cmyk": "c17;m46;y100;k2"
+		},
+		{
+			"m": "LIRR",
+			"line": "Long Beach Branch",
+			"hex": "FF6319",
+			"pantone": "PMS 165",
+			"cmyk": "m75;y96"
+		},
+		{
+			"m": "LIRR",
+			"line": "Montauk Branch",
+			"hex": "6983",
+			"pantone": "PMS 315",
+			"cmyk": "c100;m46;y37;k12"
+		},
+		{
+			"m": "LIRR",
+			"line": "Oyster Bay Branch",
+			"hex": "00AF3F",
+			"pantone": "PMS 354",
+			"cmyk": "c95;y100"
+		},
+		{
+			"m": "LIRR",
+			"line": "Port Jefferson Branch",
+			"hex": "0039A6",
+			"pantone": "PMS 286",
+			"cmyk": "c100;m56"
+		},
+		{
+			"m": "LIRR",
+			"line": "Port Washington Branch",
+			"hex": "C60C30",
+			"pantone": "PMS 186",
+			"cmyk": "c13;m100;y90;k4"
+		},
+		{
+			"m": "LIRR",
+			"line": "Ronkonkoma Branch",
+			"hex": "A626AA",
+			"pantone": "PMS 253",
+			"cmyk": "c41;m92"
+		},
+		{
+			"m": "LIRR",
+			"line": "West Hempstead Branch",
+			"hex": "00A1DE",
+			"pantone": "PMS 299",
+			"cmyk": "c84;m17"
+		},
+		{
+			"m": "Metro-North",
+			"line": "Harlem Line",
+			"hex": "0039A6",
+			"pantone": "PMS 286",
+			"cmyk": "c100;m56"
+		},
+		{
+			"m": "Metro-North",
+			"line": "Hudson Line",
+			"hex": "009B3A",
+			"pantone": "PMS 355",
+			"cmyk": "c100;y91;6k"
+		},
+		{
+			"m": "Metro-North",
+			"line": "New Haven Line",
+			"hex": "E00034",
+			"pantone": "PMS 185",
+			"cmyk": "m91;y76"
+		},
+		{
+			"m": "Metro-North",
+			"line": "Pascack Valley Line",
+			"hex": "923D97",
+			"pantone": "PMS 513",
+			"cmyk": "c49;m91"
+		},
+		{
+			"m": "Metro-North",
+			"line": "Port Jervis Line",
+			"hex": "FF7900",
+			"pantone": "PMS 151",
+			"cmyk": "m65;y100"
+		},
+		{
+			"m": "Bridges & Tunnels",
+			"line": "EZ Pass",
+			"hex": "6E267B",
+			"pantone": "PMS 259",
+			"cmyk": "c67;m100;y17;k4"
+		}
+	]
+}
